@@ -26,8 +26,9 @@ git commit -m "提交信息"
 （3）将本地的dev分支推送到远程dev分支
 git push origin dev
 （4）将本地的dev分支合并到本地的主分支
-git checkout main
-git merge dev
+git checkout master(切换到主分支)
+git merge dev(合并dev分支)
+git push origin master(推送到远程master分支)
 （5）将本地的dev删除
 git branch -d dev
 
