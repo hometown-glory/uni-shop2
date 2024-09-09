@@ -5,7 +5,7 @@ import { $http } from '@escook/request-miniprogram'
 uni.$http = $http
 
 // 设置网络请求的baseUrl
-$http.baseUrl = 'https://www.uinav.com'
+$http.baseUrl = 'https://api-hmugo-web.itheima.net'
 
 // #ifndef VUE3
 import Vue from 'vue'
