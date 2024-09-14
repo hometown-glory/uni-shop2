@@ -6,7 +6,9 @@ git remote -v
 git fetch origin
 
 3.添加或修改远程仓库
-git remote add new-origin <new-url>
+git remote add <remote-name> <remote-url>
+例如：
+git remote add origin https://github.com/username/repository.git
 
 4.拉取特定的远程仓库分支
 git fetch <remote-name> <branch-name>
@@ -30,7 +32,7 @@ git status
 git commit -m "提交信息"
 
 11.将本地的dev推送到远程仓库
-git push origin dev
+git push -u origin dev
 
 12.将本地的dev分支合并到本地的主分支
 git checkout master
