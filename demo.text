@@ -1,35 +1,60 @@
 学习如何使用git
-git branch //查看所有分支
-git status //查看当前分支状态
-git add . //添加所有文件到暂存区
-git commit -m "提交信息" //提交到本地仓库
-git push origin dev //推送到远程dev分支
-git pull origin dev //拉取远程dev分支
-git branch -b dev //创建并切换到dev分支
-git checkout dev //切换到dev分支
-git merge dev //合并dev分支
-git branch -d dev //删除dev分支
-git push origin dev //推送到远程dev分支
+1.查看远程仓库
+git remote -v
 
+2.拉取远程仓库
+git fetch origin
 
+3.添加或修改远程仓库
+git remote add new-origin <new-url>
 
-2.学习如何使用git进行分支的合并与管理
-创建分支
-git checkout -b dev
-（1）切换到dev分支
-git checkout cart
-（2）将本地的dev分支进行本地的commit提交
+4.拉取特定的远程仓库分支
+git fetch <remote-name> <branch-name>
+
+5.切换到拉取的分支
+git checkout <branch-name>
+
+6.还未创建本地分支，创建分支
+git checkout -b <branch-name>
+
+7.查看当前分支
+git branch
+
+8.将更改的内容添加到暂存区
 git add .
-查看当前分支状态
+
+9.查看当前分支状态
 git status
+
+10.将本地分支的dev进行本地的commit提交
 git commit -m "提交信息"
-（3）将本地的dev分支推送到远程dev分支
+
+11.将本地的dev推送到远程仓库
 git push origin dev
-（4）将本地的dev分支合并到本地的主分支
-git checkout master(切换到主分支)
-git merge dev(合并dev分支)
-git push origin master(推送到远程master分支)
-（5）将本地的dev删除
+
+12.将本地的dev分支合并到本地的主分支
+git checkout master
+git merge dev
+
+13.将本地的master推送到远程仓库
+git push origin master
+
+14.将本地的分支dev删除
 git branch -d dev
+
+二、额外情况
+
+1.将本地仓库初始化
+git init
+
+2.将本地仓库与远程仓库关联
+git remote add origin <remote-url>
+
+3.将本地仓库推送到远程仓库
+git push -u origin master
+
+
+
+
 
 
