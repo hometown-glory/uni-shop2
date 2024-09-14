@@ -14,8 +14,10 @@ git push origin dev //推送到远程dev分支
 
 
 2.学习如何使用git进行分支的合并与管理
-（1）创建并切换到dev分支
-git branch -b dev
+创建分支
+git checkout -b dev
+（1）切换到dev分支
+git checkout cart
 （2）将本地的dev分支进行本地的commit提交
 git add .
 查看当前分支状态
