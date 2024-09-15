@@ -49,11 +49,8 @@ git branch -d dev
 1.将本地仓库初始化
 git init
 
-2.将本地仓库与远程仓库关联
-git remote add origin <remote-url>
-
-3.将本地仓库推送到远程仓库
-git push -u origin master
+2.强制覆盖远程仓库
+git push -f origin master
 
 
 
